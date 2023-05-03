@@ -1,0 +1,203 @@
+/* RESETANDO O CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ///////////////////////////////////////////////// */
+
+body{
+    background-color: #141519;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+
+}
+.display{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.quadrado{
+    width: 300px;
+    height: auto;
+    background-color: #202731;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: opacity 0.5s ease-in-out;
+}
+.local{
+    transition: opacity 0.5s ease-in-out;
+}
+.none {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+.erro, .sucesso{
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+.sucesso .local img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.sucesso .local {
+    text-align: center;
+}
+.sucesso .local2{
+    background-color: #fff;
+    width: 120px;
+    margin: auto;
+    color: #000;
+    text-align: center;
+    border-radius: 15px;
+}
+.sucesso .local3{
+    text-align: center;
+}
+.sucesso .local4{
+    font-weight: 300;
+}
+.none{
+    display: none;
+}
+.local{
+    width:calc(100% - 10px);
+    padding: 10px;
+}
+.local1 img {
+    background-color: #272e34;
+    padding: 20px;
+    border-radius: 50%;
+}
+.local4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botoes div label{
+    padding: 10px;
+    background-color: #272e34;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    cursor: pointer;
+}
+.botoes div label:hover{
+    background-color: #7e8699;
+}
+ div input[type=radio]:checked + label{
+    background-color: #fc7617;
+}
+
+
+
+input[type=radio] {
+    display: none;
+  }
+  input[type="radio"]:checked + label {
+    background-color: #5e7aec;
+  }
+
+.botao{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #262f38;
+    border: none;
+    color: #868e99;
+    cursor: pointer;
+}
+.enviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.enviar button{
+    background-color: #fc7617;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    border-radius: 50px;
+    font-family: 'Sora', sans-serif;
+}
+.enviar button:hover{
+    background-color: #fff;
+    color: #fc7617;
+}
+.animacao{
+    animation: aparecer 0.5s linear;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+

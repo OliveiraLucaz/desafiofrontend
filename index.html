@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio front end e afins</title>
+  <link rel="shortcut icon" href="assets/imagens/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;500&display=swap');
+  </style>
+</head>
+
+<body>
+  <div class="quadrado display">
+    <div class="inicio">
+      <div class="local local1"><img src="assets/imagens/icon-star.svg" alt="estrela"></div>
+      <div class="local local2">Que nota você dá?</div>
+      <div class="local local3">Avalie a sua compra recente em nossa loja dando nota de 1 a 5:</div>
+      <div class="local local4 display">
+        <form id="formulario">
+          <div class="botoes">
+            <div>
+              <input type="radio" id="valor1" name="valor" value="1">
+              <label for="valor1">1</label>
+            </div>
+            <div>
+              <input type="radio" id="valor2" name="valor" value="2">
+              <label for="valor2">2</label>
+            </div>
+            <div>
+              <input type="radio" id="valor3" name="valor" value="3">
+              <label for="valor3">3</label>
+            </div>
+            <div>
+              <input type="radio" id="valor4" name="valor" value="4">
+              <label for="valor4">4</label>
+            </div>
+            <div>
+              <input type="radio" id="valor5" name="valor" value="5">
+              <label for="valor5">5</label>
+            </div>
+          </div>
+      </div>
+      <div class="enviar">
+        <button id="botao">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="erro none">
+      <div class="local local1"><img src="assets/imagens/icon-star.svg" alt="estrela"></div>
+      <div class="local local2">Ops!</div>
+      <div class="local local3">Você precisa escolher uma nota de 1 a 5 para avaliar antes de enviar!</div>
+      <div class="local local4 display">
+      <div class="enviar">
+        <button onclick="voltar()">Voltar</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="sucesso none">
+      <div class="local local1"><img src="assets/imagens/illustration-thank-you.svg" alt="estrela"></div>
+      <div class="local local2">Você selecionou  <span class="nota">0</span>!</div>
+      <div class="local local3">Muito Obrigado!</div>
+      <div class="local local4">Agradecemos o seu feedback, e não se esqueça: sempre que comprar em nossa loja avalie nossos produtos.</div>
+      
+    </div>
+    
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
